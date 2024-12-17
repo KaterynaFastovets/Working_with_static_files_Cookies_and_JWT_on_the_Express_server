@@ -36,8 +36,8 @@ The server will start at http://localhost:3000.
 
 + **Jsonwebtoken** — JWT generation and verification.
 
-```
 ___
+
 ### Student on the Fullstack development course
 ### Kateryna Fastovets
 - 📫 How to reach me **KatyaFastovets@gimail.com**
