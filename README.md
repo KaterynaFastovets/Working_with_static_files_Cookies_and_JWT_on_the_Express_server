@@ -26,7 +26,7 @@ MONGO_DB=your_database_URI
 
 The server will start at http://localhost:3000.
 
-### **5.** View in a browser
+### **5.** Dependencies
 
 + **Express** - a framework for Node.js for creating server applications.
 
