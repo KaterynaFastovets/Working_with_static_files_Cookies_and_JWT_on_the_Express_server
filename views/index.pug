@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    title Theme Selector & User Registration
+    link(rel="icon" href="/favicon.ico")
+    if theme === 'dark'
+      link(rel="stylesheet" href="/css/dark.css")
+    else
+      link(rel="stylesheet" href="/css/light.css")
+  body
+    h1 Current Theme: #{theme}
+    
+    form(action="/set-theme" method="POST")
+      label(for="theme") Select Theme:
+      select(name="theme" id="theme")
+        option(value="light" selected=theme==='light') Light
+        option(value="dark" selected=theme==='dark') Dark
+      button(type="submit") Save Theme
+
+    hr
+
+    h2 User Registration
+    form(action="/register" method="POST")
+      label(for="username") Username:
+      input(type="text" id="username" name="username" required)
+      br
+      label(for="email") Email:
+      input(type="email" name="email" id="email" required)
+      br
+      label(for="password") Password:
+      input(type="password" id="password" name="password" required)
+      br
+      button(type="submit") Register
+
+    h2 User Login
+    form(action="/login" method="POST")
+      label(for="loginUsername") Username:
+      input(type="text" id="loginUsername" name="username" required)
+      br
+      label(for="email") Email:
+      input(type="email" name="email" id="email" required)
+      br
+      label(for="loginPassword") Password:
+      input(type="password" id="loginPassword" name="password" required)
+      br
+      button(type="submit") Login
+
+    hr
+
+    h2 Logout
+    form(action="/logout" method="POST")
+      button(type="submit") Logout
+
+      
